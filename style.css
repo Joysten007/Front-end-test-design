@@ -5,7 +5,13 @@
 body {
   background-color: black;
 }
-
+.nav-class {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10vw 0px;
+  align-items: center;
+  visibility: visible;
+}
 .nav-logo {
   width: 10vw;
   height: 6vh;
@@ -14,6 +20,19 @@ body {
 .nav-list-container {
   display: flex;
   justify-content: space-evenly;
+}
+
+.section-1-div-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 20px 10vw 10vw; */
+  margin: 5vw 10vw;
+}
+.sec-2-container {
+  margin: 5vh;
+  display: flex;
+  justify-content: space-around;
 }
 
 .sec-3-nav-container {
@@ -56,7 +75,8 @@ body {
   color: #b4a9a9;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
   border: 1px solid #b4a9a9;
   border-radius: 6px;
 }
@@ -70,13 +90,22 @@ body {
 }
 
 .section-1-head {
-  font-size: 70px;
+  font-size: 5.5vw;
+  /* font-size: 70px; */
   background-color: transparent;
   margin: 0;
 }
 
+.section-1-text {
+  font-size: 1vw;
+  line-height: 2;
+  color: #b4a9a9;
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+
 .girl-image {
-  height: 80vh;
+  height: 35vw;
   filter: brightness(65%);
 }
 
@@ -86,25 +115,25 @@ body {
 }
 
 .element-1 {
-  top: 23vh;
+  top: 14vw;
   right: 45%;
   width: 7vw;
 }
 
 .element-2 {
-  top: 20vh;
+  top: 12vw;
   right: 8%;
   width: 2.5vw;
 }
 
 .element-3 {
-  top: 76vh;
+  top: 36vw;
   right: 50%;
   width: 5vw;
 }
 
 .element-4 {
-  top: 82vh;
+  top: 51vw;
   right: 8%;
   width: 3vw;
 }
@@ -128,7 +157,7 @@ body {
 }
 
 .section-2-head {
-  font-size: 50px;
+  font-size: 4vw;
   background-color: transparent;
   margin: 0;
 }
@@ -180,6 +209,10 @@ body {
   top: 290vh;
   right: 28%;
   width: 3vw;
+}
+
+#section_2 {
+  transition-duration: 2s;
 }
 
 .element-portfolio-2 {
@@ -243,4 +276,22 @@ body {
 .footer-small-text {
   font-size: 10px;
   color: #b4a9a9;
+}
+
+@media (max-width: 960px) {
+  .nav-class {
+    visibility: hidden;
+  }
+  .sec-2-container {
+    display: block;
+  }
+  .scroll-container {
+    display: block;
+  }
+}
+@media (max-width: 560px) {
+  .section-1-div-main {
+    display: block;
+    text-align: center;
+  }
 }
